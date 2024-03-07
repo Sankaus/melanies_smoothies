@@ -2,7 +2,7 @@
 import streamlit as st
 #from snowflake.snowpark.context import get_active_session
 from snowflake.snowpark.functions import col
-
+import requests
 # Write directly to the app
 st.title('My parents new healthy dinner')
 st.write(
@@ -45,7 +45,7 @@ if ingredients_list:
     time_to_insert = st.button('Submit Order')   
     if ingredients_string:
         session.sql(my_insert_stmt).collect()
-        import requests
+    
   
 
     st.success('Your Smoothie is ordered, MellyMel!', icon="✅")
