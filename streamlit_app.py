@@ -25,8 +25,8 @@ st.stop()
 
 #Convert th Snowfpark dataframe to pandas dataframe so we use the LOC function
 pd_df=my_dataframe.to_pandas()
-#st.data_frame(pd_df)
-#st.stop()
+st.dataframe(pd_df)
+st.stop()
 
 ingredients_list= st.multiselect(
     'chose upto 5 ingrediants:'
