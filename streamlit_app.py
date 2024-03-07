@@ -53,7 +53,7 @@ if ingredients_list:
 
 
      
-     st.success('Your Smoothie is ordered, MellyMel!', icon="✅")
+ st.success('Your Smoothie is ordered, MellyMel!', icon="✅")
 
 
 
