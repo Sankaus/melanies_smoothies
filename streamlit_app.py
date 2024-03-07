@@ -47,10 +47,13 @@ if ingredients_list:
  if ingredients_string:
      session.sql(my_insert_stmt).collect()
      
+     #New Section to display fruityvice nutrition information.
+    import requests
+    fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+    st.text(fruityvice_response)
+
+     
      st.success('Your Smoothie is ordered, MellyMel!', icon="✅")
 
-#New Section to display fruityvice nutrition information.
-import requests
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-st.text(fruityvice_response)
+
     
