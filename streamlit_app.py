@@ -48,9 +48,7 @@ if ingredients_list:
         import requests
   
 
-
-     
- st.success('Your Smoothie is ordered, MellyMel!', icon="✅")
+    st.success('Your Smoothie is ordered, MellyMel!', icon="✅")
 
 
 
